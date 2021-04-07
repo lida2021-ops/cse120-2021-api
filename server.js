@@ -78,6 +78,23 @@ app.post('/data/delete', function (req, res) {
   .catch(console.error)
 })
 
+app.post('/data/update', function (req, res) {
+  client.connect()
+  .then(client => {
+    let id = req.body.id;
+    let value = req.body.value;
+
+    const query = { "_id": ObjectId(id)};
+    client.db('cse120-2021-db').collection('books').editOne(query)
+      .then(result => {
+        console.log(result.deletedCount)
+        res.send({"deleted":result.deletedCount});
+      })
+      .catch(error => console.error(error))
+  })
+  .catch(console.error)
+})
+
 app.listen(port, function () {
     console.log('Example app listening on port 3001!')
 })
