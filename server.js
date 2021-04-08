@@ -87,8 +87,8 @@ app.post('/data/update', function (req, res) {
     const query = { "_id": ObjectId(id)};
     client.db('cse120-2021-db').collection('books').editOne(query)
       .then(result => {
-        console.log(result.deletedCount)
-        res.send({"deleted":result.deletedCount});
+        console.log(result.editedCount)
+        res.send({"edited":result.editedCount});
       })
       .catch(error => console.error(error))
   })
