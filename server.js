@@ -79,16 +79,16 @@ app.post('/data/delete', function (req, res) {
 })
 
 app.post('/data/update', function (req, res) {
-  client.connect('mongodb+srv://lida-admin:1direction@cluster0.qynl2.mongodb.net/test')
+  client.connect()
   .then(client => {
     let id = req.body.id;
     let value = req.body.value;
 
     const query = { "_id": ObjectId(id)};
-    client.db('cse120-2021-db').collection('books').editOne(query)
+    client.db('cse120-2021-db').collection('books').updateOne(query)
       .then(result => {
-        console.log(result.editedCount)
-        res.send({"edited":result.editedCount});
+        console.log(result.updatedCount)
+        res.send({"updated":result.updatedCount});
       })
       .catch(error => console.error(error))
   })
