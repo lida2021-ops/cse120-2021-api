@@ -79,7 +79,7 @@ app.post('/data/delete', function (req, res) {
 })
 
 app.post('/data/update', function (req, res) {
-  client.connect()
+  client.connect('mongodb+srv://lida-admin:1direction@cluster0.qynl2.mongodb.net/test')
   .then(client => {
     let id = req.body.id;
     let value = req.body.value;
