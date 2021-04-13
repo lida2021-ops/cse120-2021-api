@@ -51,6 +51,85 @@ function saveData() {
     });
 }
 
+function updateBookData(e) {
+  e.preventDefault();
+  var updatedBook = {};
+  updatedBook.id = document.getElementById("_id").value;
+  updatedBook.fullname = document.getElementById("fullname").value;
+  updatedBook.title = document.getElementById("title").value;
+  updatedBook.author = document.getElementById("author").value;
+  updatedBook.color = document.getElementById("color").value;
+  updatedBook.coverMaterial = document.getElementById("coverMaterial").value;
+  updatedBook.price = document.getElementById("price").value;
+  updatedBook.currency = document.getElementById("currency").value;
+  updatedBook.publisher = document.getElementById("publisher").value;
+  updatedBook.edit = document.getElementById("edir").value;
+  updatedBook.date = document.getElementById("date").value;
+  updatedBook.genre = document.getElementById("genre").value;
+  updatedBook.language = document.getElementById("language").value;
+  updatedBook.otherlang = document.getElementById("otherlang").value;
+
+    console.log(myBook);
+
+      $.ajax({
+      type: 'POST',
+      url: "https://cse120-2021-api-lida.herokuapp.com/data/update",
+      data: updatedBook,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
+  
+}
+
+function updateHobbyData(e) {
+  e.preventDefault();
+  var updatedHobby = {};
+  updatedHobby.id = document.getElementById("_id").value;
+  updatedHobby.fullname = document.getElementById("fullname").value;
+  updatedHobby.email = document.getElementById("email").value;
+  updatedHobby.age = document.getElementById("age").value;
+  updatedHobby.type = document.getElementById("type").value;
+  updatedHobby.fav = document.getElementById("fav").value;
+  updatedHobby.location = document.getElementById("location").value;
+  updatedHobby.frequency = document.getElementById("frequency").value;
+  updatedHobby.hour = document.getElementById("hour").value;
+  updatedHobby.water = document.getElementById("water").value;
+  updatedHobby.blogger = document.getElementById("blogger").value;
+  updatedHobby.diet = document.getElementById("diet").value;
+  updatedHobby.calories = document.getElementById("calories").value;
+  updatedHobby.cheatmeal = document.getElementById("cheatmeal").value;
+  updatedHobby.playlist = document.getElementById("playlist").value;
+  
+
+
+      $.ajax({
+      type: 'POST',
+      url: "https://cse120-2021-api-lida.herokuapp.com/data/update",
+      data: updatedHobby,
+      cache: false,
+      dataType : 'json',
+      success: function (data) {
+        console.log("success");
+      },
+      error: function (xhr) {
+        console.error("Error in post", xhr);
+      },
+      complete: function () {
+        console.log("Complete");  
+      }
+    });
+  
+}
+
 function loadExistingData() {
   myFitnessData = [];
   myBookData = [];
