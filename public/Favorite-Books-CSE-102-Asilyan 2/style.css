@@ -1,0 +1,102 @@
+body {
+ background-color:bisque;
+ text-align: center;
+ text-shadow: 2px 2px bisque;
+ font-size: 18px;
+ padding: 30px;
+ font-family: "Sofia", sans-serif;
+
+}
+
+label { font-size: x-large;
+color: rgb(136, 15, 136);
+
+}
+
+div.form-div {
+  border:2px solid purple; 
+  background-color: pink;
+  border-radius: 30px;
+  padding:30px;
+  margin-bottom: 30px;
+  font-family: "Sofia", sans-serif;
+
+
+
+} 
+
+#funny_girl {
+  height:100px;
+  width: 50px;
+  position: absolute;
+  top: 80px;
+  left: 10px;
+      }
+
+
+#books { 
+    width: 70px;
+
+}
+
+
+
+input[type=number], [type=color], [type=text] {
+  width: 70vw;
+  box-shadow: 2px 2px palevioletred;
+  background-color: rgba(240, 250, 102, 0.589);
+  margin-bottom: 20px;
+  border-radius: 40px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+}
+
+
+input[type=button], input[type=date] {
+  width: 70vw;
+  box-shadow: 2px 2px palevioletred;
+  background-color: rgba(240, 250, 102, 0.589);
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+
+       
+      }
+  
+
+select {
+  width: 70vw;
+  box-shadow: 2px 2px palevioletred;
+  background-color: rgba(240, 250, 102, 0.589);
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+  font-family: "Sofia", sans-serif;
+      }
+
+
+button#mainButton {
+  font-size: 20px;
+  background-color:rgba(240, 250, 102, 0.589)k;
+  border: none;
+  border-radius: 10px 10px;
+  padding: 15px;
+  color:purple ;
+  transform: matrix3d(180deg)
+}
+       
+h1 {
+ background-color: purple; text-align: center; color: azure; font-family: "Sofia", sans-serif;  transform: rotate3d(180deg);
+
+    }

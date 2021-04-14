@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title> Favorite Books </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="		crossorigin="anonymous"></script> 
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+</head>
+
+<body>
+  
+	<h1> Favorite books <img id="books"></h1> 
+  <h2> <sup>*</sup>Required </h2> 
+
+    
+    <form>
+      <div class="form-div">
+         <label for "fname"> <b> Full name: </b> <sup>*</sup> </label> <br>  
+        <input type="text" name= "fullname" id= "fullname" required
+        onblur="handleFullnameChange()">   
+      </div>
+
+      <div class="form-div">
+        <label for="title"> <b> Title: </b> <sup>*</sup>  </label><br> <input type="text" id = "title" required
+        onblur="handleTitleChange()"><br><br> 
+      </div>
+
+      <div class="form-div">
+        <label for ="author"> <b> Author: </b> <sup>*</sup> </label><br> <input type="text" id = "author" required
+        onblur="handleAuthorChange()"><br> <br>
+      </div>
+
+      <div class="form-div">
+        <label for ="color"> <b> Color: </b>  </label> <br> <input type="color" id = "color" onblur="handleColorChange()"><br> <br>
+      </div>
+
+      <div class="form-div"> 
+        <label for ="cover"> <b> Cover type: </b></label><br> 
+        <select onchange ="handleCoverMaterialChange()" id="cover">
+          <option value="paperback">Paperback </option>
+          <option value="harcover"> Hardcover </option>
+          <option value-'other'> Other </option>   
+        </select> 
+
+      </div> 
+
+      <div class="form-div">
+        <br> 
+        <img id="funny_girl" src="https://i.pinimg.com/originals/84/0e/be/840ebe66f737a79a2b7963175e3f8e8b.png" alt="books"><label for= "Nmb"> Number of pages: </label><br> <input type ="number" id ="pages" name="text" onchange="handlePagesChange()"><br> <br> 
+      </div>
+      <div class="form-div">
+        <label for = "price"> Price: </label><br>
+        <input type = "number" id ="price" onchange="handlePriceChange()"><br> <br>
+      </div>
+      <div class="form-div">
+        <label for ="cur">Currency: </label><br> 
+        <input type ="text" id = "currency" onblur="handleCurrencyChange()" ><br> <br>
+      </div>
+      <div class="form-div">
+        <label for ="lang" > Language: </label><br> 
+        <input type="radio" id="English" name="language" onchange="handleLangChange(event)"> 
+        <label for ="lang"> English </label><br>
+        <input type="radio" id="Russian" name="language" onchange="handleLangChange(event)"> 
+        <label for ="lang"> Russian </label><br> 
+        <input type="radio" id="French" name="language"onchange="handleLangChange(event)"> 
+        <label for ="lang"> French </label><br> 
+        <input type="radio" id="Armenian" name="language" onchange="handleLangChange(event)"> 
+        <label for ="lang"> Armenian </label><br>
+        <input type = "radio" id="otherl" name="language" onchange="handleLangChange(event)"> 
+        <label for ="other"> Other:</label> 
+        <input type="text" id = "otherlang" onblur="handleOtherlangChange()" ><br> <br>         
+      </div>
+      
+      <div class="form-div"> 
+        <label for = "edit"> Edition: </label><br> <input type = "text" id = "edit" onblur="handleEditChange()"><br><br> 
+      </div>
+      <div class="form-div">
+        <label for ="pub"> Publisher: </label><br> <input type = "text" id = "publisher" onblur="handlePublisherChange()"><br><br>
+      </div>
+      <div class="form-div">
+        <label for ="date"> Publishing Date: </label><br> <input type="date" id="date" name="publishing" onblur="handleDateChange()"> <br><br>
+      </div>
+      <div class="form-div">
+        <label for ="Genre"> Genre: </label><br> <input type = "text" id ="genre" onblur="handleGenreChange()"><br><br>
+      </div>
+                 
+        <button class="button" style="" onclick="showTheBookData(event)">Submit</button>
+        
+        </div> 
+    </form>  
+    <script src="script.js"></script>  
+  </body>
+</html>
