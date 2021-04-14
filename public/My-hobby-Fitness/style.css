@@ -1,0 +1,141 @@
+body {
+
+ background-image: url("https://i.pinimg.com/originals/90/78/72/90787235384d309ba77c25068ec5a2b8.jpg");
+ background-position: center; 
+ background-repeat: no-repeat; 
+ background-size: cover;
+ background-color: rgb(53, 159, 185);
+ padding: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 800px;
+ 
+}
+
+h1 {
+
+ background-color: darkcyan ; 
+ text-align: center; 
+ color: azure; 
+ font-family: cursive;
+ font-size: 50pt; 
+
+    }
+
+h2 {
+
+  color: darkcyan ;
+  font-family: fantasy;
+ 
+}
+
+h3 {
+
+ background-color: rgb(21, 81, 150) ; 
+ text-align: center; 
+ color: azure; 
+ font-family: cursive;
+ font-size: 20pt; 
+
+    }
+
+sup {
+  color:rgb(11, 99, 99);
+}
+
+div.form-div {
+
+  background-color: rgba(173, 233, 233, 0.534);
+  border-radius: 20px;
+  border: 3px solid rgb(11, 11, 94);
+  padding:30px;
+  font-family: "Sofia", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: inherit;
+  color: rgb(72, 25, 133);
+  text-shadow: 2px 2px rgb(196, 233, 255);
+  font-size: large; 
+  
+
+} 
+
+
+input[type=text] {
+
+  width: 40vw;
+  color: darkblue;
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted darkblue;
+  background: rgba(173, 233, 233, 0.534);
+  margin-top: 40px; 
+  font-family: "Sofia", sans-serif;
+
+
+      }
+
+input[type=number] {
+
+  width: 40vw;
+  color: darkblue;
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted darkblue;
+  background: rgba(173, 233, 233, 0.534);
+  margin-top: 40px; 
+  font-family: "Sofia", sans-serif;
+
+
+      }
+
+
+#email {
+
+  width: 40vw;
+  color: darkblue;
+  border-width: 0px;
+  border-bottom: 1px dotted darkblue;
+  background: rgba(173, 233, 233, 0.534);
+  margin-top: 40px; 
+  font-family: "Sofia", sans-serif;
+  font-size: large;
+}
+  
+
+select {
+
+  width: 20vw;
+  box-shadow: 2px 2px darkblue ;
+  background-color:  rgba(114, 164, 223, 0.815);
+  margin-top: 30px;
+  border-radius: 120px;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 2px solid darkblue;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+  font-family: "Sofia", sans-serif;
+  font-size: x-large;
+  color: darkblue; 
+      }
+
+
+#button {
+
+  font-size: 20px;  
+  border: none;
+  font-family: "Sofia", sans-serif;
+  border-radius: 10px 10px;
+  padding: 15px;
+  color: darkblue;
+  background-color: rgb(65, 184, 214);
+
+}
+input[type="checkbox"]:checked + label {
+		color: blue;
+    font-weight: bold;
+    background: cornflowerblue;
+} 
+

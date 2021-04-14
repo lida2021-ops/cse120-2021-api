@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+	<title> Welcome to my fitness survey </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="		crossorigin="anonymous"></script>
+</head>
+
+<body>
+  
+	<h1> Welcome to my fitness survey </h1> 
+  <h2> <sup>*</sup>Required </h2> 
+  
+    <form name = "fitness">
+      <div class="form-div">
+        <label for "fname"> Full name <sup>*</sup> </label> <br>  
+        <input type="text" name="fullname" id="fullname" placeholder="Your answer" required         onblur="handleFullnameChange()">   
+      </div>
+       <div class="form-div">
+        <label for "age"> Your age <sup>*</sup> </label> <br>  
+        <input type = "number" id ="age" name="age" placeholder="Your answer" onchange="handleAgeChange()" required><br> <br>   
+      </div>
+      <div class ="form-div">
+        <label for "email"> Your email address <sup>*</sup> </label> <br>  
+        <input type="email" id="email" placeholder="Your answer" onblur="handleEmailChange()" required> 
+      </div>
+      <div class="form-div">
+        <label for ="type"> Favorite type of fitness </label><br> <br>
+        <input type="radio" id="cardio" name="type" onchange="handleTypeChange(event)"> 
+        <label for ="cardio"> Cardio</label><br>
+        <input type="radio" id="strenght" name="type" onchange="handleTypeChange(event)"> 
+        <label for ="Strength"> Muscular Strength </label><br>
+        <input type="radio" id="endurance" name="type" onchange="handleTypeChange(event)"> 
+        <label for ="endurance"> Muscular Endurance </label><br> 
+        <input type="radio" id="flexibility" name="type" onchange="handleTypeChange(event)"> 
+        <label for ="flexibility"> Flexibility </label><br> 
+        <input type = "radio" id="composition" name="type" onchange="handleTypeChange(event)"> 
+        <label for ="compo"> Body composition </label><br>
+        <input type = "radio" id="other" name="type" onchange="handleTypeChange(event)"> 
+        <label for ="other"> Other:</label> 
+        <input type="text" id = "othertype" onblur="handleOtherTypeChange()" ><br> <br>   
+      </div>
+
+      <div class="form-div"> 
+        <label for ="fav" >Favorite exercises </label><br><br>
+        <input type="checkbox" id="plank" name="fav" value="plank" onclick="handleCheckboxChange(event)"> 
+        <label for ="plank"> Plank </label><br>
+        <input type="checkbox" id="abs" name="fav" value="plank" onclick="handleCheckboxChange(event)"> 
+        <label for ="strength"> Ab crunches </label><br>
+        <input type="checkbox" id="burpee"  name="fav" onclick="handleCheckboxChange(event)"> 
+        <label for ="endurance"> Burpee </label><br> 
+        <input type="checkbox" id="pushups" name="fav"  onclick="handleCheckboxChange(event)"> 
+        <label for ="flexibility"> Pushups </label><br>
+        <input type = "checkbox" id="bridges" name="fav" onclick="handleCheckboxChange(event)"> 
+        <label for ="flexibility"> Bridges </label><br>
+        <input type = "checkbox" id="spiderman" name="fav"  onclick="handleCheckboxChange(event)">   
+        <label for ="flexibility"> Spiderman </label><br> 
+        <input type = "checkbox" id="squats" onclick="handleCheckboxChange(event)"> 
+        <label for ="flexibility"> Squats </label><br>
+        <label for ="other"> Other </label>  
+        <input type="text" id ="othertype" name="fav" onchange="handleCheckboxChange(event)"><br> <br>  
+        </select> 
+
+      </div> 
+
+      <div class="form-div"> 
+        <label for ="location"> Where do you prefer to workout? </label><br> 
+        <select id="location" onchange="handleLocationChange()">
+          <option value="home!"> At home! </option>
+          <option value="gym!"> At the gym! </option>
+          <option value="park"> At the park!  </option> 
+          <option value= "other2"> Other </option> 
+
+        </select> 
+      </div>
+
+      <div class="form-div">
+        <label for ="frequency">  How often do you workout? <sup>*</sup> </label><br> <input type="text" id = "frequency" placeholder="Your answer" required onblur="handleFrequencyChange()"><br> <br>
+      </div>
+
+      <div class="form-div">
+        <label for ="hour">  How long does the workout last? <sup>*</sup> </label> <br> <input type="text" id = "hour" placeholder="Your answer" required onblur="handleHourChange()"><br> <br>
+      </div>
+
+      <div class="form-div"> 
+        <label for ="water">  Do you drink enough water? </label><br> 
+        <select id="water" onchange="handleWaterChange()">
+          <option value="yes"> Yes! </option>
+          <option value="no"> Not enough! </option>
+          <option value="trying"> I am trying to!  </option>      
+        </select> 
+      </div>
+      <div class="form-div">
+        <label for = "blogger"> Who is your favorite fitness blogger?  </label><br>
+        <input type = "text" id ="blogger" required placeholder="Your answer" onblur="handleBloggerChange()"><br> <br>
+      </div>
+
+      <div class="form-div">
+        <label for ="diet"> What does your diet look like?</label><br> 
+        <input type ="text" id = "diet" placeholder="Your answer"  onblur="handleDietChange()"><br> <br>
+      </div>
+     
+      <div class="form-div"> 
+        <label for = "calories"> How many calories do you consume per day? </label><br> <input type = "text" id = "calories" placeholder="Your answer"  onblur="handleCaloriesChange()"><br><br> 
+      </div>
+      <div class="form-div">
+        <label for ="meal"> Any cheatmeal? </label><br> <input type = "text" id = "cheatmeal" placeholder="Your answer" onblur="handleCheatmealChange()"><br><br>
+      </div>
+      <div class="form-div">
+        <label for ="playlist"> What is your workout playlist?</label><br> <input type = "text" id = "playlist" placeholder="Your answer" onblur="handlePlaylistChange()"><br><br>
+      </div>
+
+      <h3 class="font-effect-shadow-multiple"> “Physical fitness is the first requisite of happiness.”</h3> 
+      
+
+      <button id="button" onclick="showTheData(event)">Submit</button>
+
+        
+        </div> 
+    </form>  
+     <script src="script.js"></script>  
+  </body>
+</html>
