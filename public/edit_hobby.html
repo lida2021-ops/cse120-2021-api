@@ -39,6 +39,7 @@
     text-shadow: 2px 2px rgb(196, 233, 255);
     font-size: large; 
    } 
+
    h1 {
 
     background-color: darkcyan ; 
@@ -48,13 +49,32 @@
     font-size: 50pt; 
 
     }
-     
+     #button2 {
+
+     font-size: 20px;  
+     border: none;
+     font-family: "Sofia", sans-serif;
+     border-radius: 10px 10px;
+     padding: 15px;
+     color: darkblue;
+     background-color: rgb(65, 184, 214);
+
+    }
+
+    label[for=id] {
+      	color: #ffffff;
+        font-size: 30px;
+        background-color: darkcyan;  
+
+    }
+
+
 </style>
   </head> 
   <body style="background-color: rgba(173, 233, 233, 0.534);" onload="loadFitnessItemForEdit()">
     <h1> Edit fitness submissions </h1> 
 
-    <label>ID</label>
+    <label for ="id"> ID </label>
     <input type="text" id="_id" readonly> <br>
     <div class="form-div">
     <label>Full name</label>
@@ -112,10 +132,8 @@
     <label>What is your workout playlist?</label>
     <input type="text" id="playlist"><br>
     </div>
-	  
-	<button id="button2" onclick="updateHobbyData(event)">Update</button>
-
-
+    
+  <button id="button2" onclick="updateHobbyData(event)">Update</button>
 
   </body>
 </html>
