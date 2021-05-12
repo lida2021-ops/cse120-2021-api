@@ -62,12 +62,11 @@ function updateBookData(e) {
   updatedBook.cover = document.getElementById("cover").value;
   updatedBook.price = document.getElementById("price").value;
   updatedBook.currency = document.getElementById("currency").value;
+  updatedBook.language = document.getElementById("language").value;
   updatedBook.publisher = document.getElementById("publisher").value;
   updatedBook.edit = document.getElementById("edit").value;
   updatedBook.date = document.getElementById("date").value;
   updatedBook.genre = document.getElementById("genre").value;
-  updatedBook.language = document.getElementById("language").value;
-  updatedBook.otherlang = document.getElementById("otherlang").value;
 
     console.log(myBook);
 
