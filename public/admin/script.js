@@ -59,7 +59,7 @@ function updateBookData(e) {
   updatedBook.title = document.getElementById("title").value;
   updatedBook.author = document.getElementById("author").value;
   updatedBook.color = document.getElementById("color").value;
-  updatedBook.coverMaterial = document.getElementById("coverMaterial").value;
+  updatedBook.coverMaterial = document.getElementById("cover").value;
   updatedBook.price = document.getElementById("price").value;
   updatedBook.currency = document.getElementById("currency").value;
   updatedBook.publisher = document.getElementById("publisher").value;
