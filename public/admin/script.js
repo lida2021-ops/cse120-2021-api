@@ -296,5 +296,19 @@ function loadBookItemForEdit() {
   console.log(editItem);
   document.getElementById("_id").value = editItem["_id"];
   document.getElementById("fullname").value = editItem["fullname"]; 
+  document.getElementById("title").value = editItem["title"];
+  document.getElementById("color").value = editItem["color"];
+  document.getElementById("author").value = editItem["author"];
+  document.getElementById("cover").value = editItem["cover"]; 
+  document.getElementById("price").value = editItem["price"];
+  document.getElementById("currency").value = editItem["currency"];
+  document.getElementById("publisher").value = editItem["publisher"];
+  document.getElementById("edit").value = editItem["edit"];
+  document.getElementById("date").value = editItem["date"]; 
+  document.getElementById("genre").value = editItem["genre"];
+  document.getElementById("language").value = editItem["language"];
+  document.getElementById("otherlang").value = editItem["otherlang"];  
+  
+
 }
 
