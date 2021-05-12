@@ -302,12 +302,13 @@ function loadBookItemForEdit() {
   document.getElementById("cover").value = editItem["cover"]; 
   document.getElementById("price").value = editItem["price"];
   document.getElementById("currency").value = editItem["currency"];
-  document.getElementById("publisher").value = editItem["publisher"];
+  document.getElementById("language").value = editItem["language"];
+  document.getElementById("otherlang").value = editItem["otherlang"];
   document.getElementById("edit").value = editItem["edit"];
+  document.getElementById("publisher").value = editItem["publisher"];
   document.getElementById("date").value = editItem["date"]; 
   document.getElementById("genre").value = editItem["genre"];
-  document.getElementById("language").value = editItem["language"];
-  document.getElementById("otherlang").value = editItem["otherlang"];  
+    
   
 
 }
