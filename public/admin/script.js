@@ -303,7 +303,6 @@ function loadBookItemForEdit() {
   document.getElementById("price").value = editItem["price"];
   document.getElementById("currency").value = editItem["currency"];
   document.getElementById("language").value = editItem["language"];
-  document.getElementById("otherlang").value = editItem["otherlang"];
   document.getElementById("edit").value = editItem["edit"];
   document.getElementById("publisher").value = editItem["publisher"];
   document.getElementById("date").value = editItem["date"]; 
