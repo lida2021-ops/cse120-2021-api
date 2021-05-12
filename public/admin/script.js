@@ -68,7 +68,6 @@ function updateBookData(e) {
   updatedBook.date = document.getElementById("date").value;
   updatedBook.genre = document.getElementById("genre").value;
 
-    console.log(myBook);
 
       $.ajax({
       type: 'POST',
