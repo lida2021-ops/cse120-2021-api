@@ -4,70 +4,112 @@
     <title>Data</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <link href="book/style.css" rel="stylesheet" type="text/css" />
     <style>
 
-    input[type=text] {
+    body {
+ background-color:bisque;
+ text-align: center;
+ text-shadow: 2px 2px bisque;
+ font-size: 18px;
+ padding: 30px;
+ font-family: "Sofia", sans-serif;
 
-    width: 40vw;
-    color: #ff99cc;
-    font-size: large; 
-    border-width: 0px;
-    border-bottom: 1px dotted darkblue;
-    background: rgba(173, 233, 233, 0.534);
-    margin-top: 40px; 
-    font-family: "Sofia", sans-serif;
+}
 
-    }
+label { font-size: x-large;
+color: rgb(136, 15, 136);
+
+}
+
+div.form-div {
+  border:2px solid purple; 
+  background-color: pink;
+  border-radius: 30px;
+  padding:30px;
+  margin-bottom: 30px;
+  font-family: "Sofia", sans-serif;
 
 
-    div.form-div {
 
-    background-color: #ff99cc;
-    border-radius: 20px;
-    border: 3px solid rgb(11, 11, 94);
-    padding:20px;
-    font-family: "Sofia", sans-serif;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    margin-left: 20px;
-    text-align: inherit;
-    color: rgb(72, 25, 133);
-    text-shadow: 2px 2px rgb(196, 233, 255);
-    font-size: large; 
-    } 
+} 
 
-    h1 {
+#funny_girl {
+  height:100px;
+  width: 50px;
+  position: absolute;
+  top: 80px;
+  left: 10px;
+      }
 
-    background-color: pink ; 
-    text-align: center; 
-    color: azure; 
-    font-family: cursive;
-    font-size: 50pt; 
 
-    }
+#books { 
+    width: 70px;
 
-    #button1 {
+}
 
-     font-size: 20px;  
-     border: none;
-     font-family: "Sofia", sans-serif;
-     border-radius: 10px 10px;
-     padding: 15px;
-     color: darkblue;
-     background-color: rgb(65, 184, 214);
 
-    }
 
-    label[for=id] {
-      color: #ffffff;
-      font-size: 30px;
-      background-color: darkcyan;  
+input[type=number], [type=color], [type=text] {
+  width: 70vw;
+  box-shadow: 2px 2px palevioletred;
+  background-color: rgba(240, 250, 102, 0.589);
+  margin-bottom: 20px;
+  border-radius: 40px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+}
 
-    }
 
+input[type=button], input[type=date] {
+  width: 70vw;
+  box-shadow: 2px 2px palevioletred;
+  background-color: rgba(240, 250, 102, 0.589);
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+
+       
+      }
   
-     </style>
+
+select {
+  width: 70vw;
+  box-shadow: 2px 2px palevioletred;
+  background-color: rgba(240, 250, 102, 0.589);
+  margin-bottom: 20px;
+  border-radius: 50px;
+  padding: 24px;
+  box-sizing: border-box;
+  border: 2px solid purple;
+  border-bottom: 1px black;
+  padding-bottom: 50px;
+  font-family: "Sofia", sans-serif;
+      }
+
+
+button#mainButton {
+  font-size: 20px;
+  background-color:rgba(240, 250, 102, 0.589)k;
+  border: none;
+  border-radius: 10px 10px;
+  padding: 15px;
+  color:purple ;
+  transform: matrix3d(180deg)
+}
+       
+h1 {
+ background-color: purple; text-align: center; color: azure; font-family: "Sofia", sans-serif;  transform: rotate3d(180deg);
+
+    }
+
+</style>
     <script
 			src="https://code.jquery.com/jquery-3.5.1.min.js"
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
