@@ -131,7 +131,7 @@ function updateHobbyData(e) {
 function loadExistingData() {
   myFitnessData = [];
   myBookData = [];
-  otherData = [];
+
   $.ajax({
       type : "GET",
       url : "https://cse120-2021-api-lida.herokuapp.com/data",
@@ -152,7 +152,6 @@ function loadExistingData() {
         })
         displayData(myFitnessData, "fitnessDataContainer");
         displayData(myBookData, "bookDataContainer");
-        displayData(otherData, "otherDataContainer");
       },
       error : function(data) {
           console.log("Error")
