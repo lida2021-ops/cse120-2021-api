@@ -119,7 +119,7 @@ function validateFormData() {
   return isFormValid;
 }
 
-function myHobbyData(e) {
+function FormData(e) {
   e.preventDefault();
   if(validateFormData() == false) {
     return;
@@ -128,7 +128,8 @@ function myHobbyData(e) {
     if (okay) {
        window.location.href = "https://cse120-2021-api-lida.herokuapp.com/;"
     }
-    
+
+
     });
   }
 
