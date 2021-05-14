@@ -140,7 +140,6 @@ function showTheData(e){
   } else {
     console.log(myHobby);
     
-
     $.ajax({
       type: 'POST',
       url: "https://cse120-2021-api-lida.herokuapp.com/data",
@@ -303,10 +302,10 @@ function loadEditItem() {
     document.getElementById("water").value = editItem["water"];
 }
 
+
 function editData(id) {
     var tmp = id.split("edit_");
     var item_id = tmp[1];
-
     loadedData.forEach(item => {
         if (item._id == item_id) {
             console.log(item); 
@@ -315,5 +314,4 @@ function editData(id) {
             document.location  = "form2.html"; 
         }
     })
-
 }
