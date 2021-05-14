@@ -140,7 +140,6 @@ function showTheData(e){
   } else {
     console.log(myHobby);
     
-  }
 
     $.ajax({
       type: 'POST',
