@@ -118,6 +118,7 @@ function updateHobbyData(e) {
       dataType : 'json',
       success: function (data) {
         console.log("success");
+        window.location.href = "https://cse120-2021-api-lida.herokuapp.com/admin/index.html"
       },
       error: function (xhr) {
         console.error("Error in post", xhr);
