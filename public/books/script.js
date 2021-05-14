@@ -92,7 +92,7 @@ function showTheBookData(e) {
     dataType : 'json',
     success: function (data) {
       console.log("success");
-      document.location("thankyou.html");
+      document.location("https://cse120-2021-api-lida.herokuapp.com/books/thankyou.html");
     },
     error: function (xhr) {
       console.error("Error in post", xhr);
