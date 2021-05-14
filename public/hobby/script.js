@@ -139,11 +139,7 @@ function showTheData(e){
     return;
   } else {
     console.log(myHobby);
-    Swal.fire("Way to go!", "success",).then (okay => {
-      if(okay) {
-        window.location.href = "thankyou.html";
-      }
-    });
+    
   }
 
     $.ajax({
