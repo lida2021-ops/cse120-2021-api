@@ -158,7 +158,7 @@ function showTheHobbyData(e){
       }
     });
   }
-
+}
 
 function displayData(existingData) {
   document.getElementById("existingData").innerHTML = "<ul>";
