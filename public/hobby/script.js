@@ -249,17 +249,7 @@ function displayData(data) {
         document.getElementById("dataContainer").appendChild(item);
     })
 }
-var loadedData = [];
-function loadEditItem() {
-    localStorage = window.localStorage;
-    editItem = JSON.parse(localStorage.getItem("editItem"));
-    console.log(editItem);
-    document.getElementById("_id").innerHTML = editItem["_id"];
-    document.getElementById("fullname").value = editItem["fullname"];
-    document.getElementById("hour").value = editItem["hour"];   
-    document.getElementById("frequency").value = editItem["frequency"];   
-    document.getElementById("water").value = editItem["water"];
-}
+
 function editData(id) {
     var tmp = id.split("edit_");
     var item_id = tmp[1];
@@ -271,4 +261,16 @@ function editData(id) {
             document.location  = "form2.html"; 
         }
     })
+}
+
+var loadedData = [];
+function loadEditItem() {
+    localStorage = window.localStorage;
+    editItem = JSON.parse(localStorage.getItem("editItem"));
+    console.log(editItem);
+    document.getElementById("_id").innerHTML = editItem["_id"];
+    document.getElementById("fullname").value = editItem["fullname"];
+    document.getElementById("hour").value = editItem["hour"];   
+    document.getElementById("frequency").value = editItem["frequency"];   
+    document.getElementById("water").value = editItem["water"];
 }
