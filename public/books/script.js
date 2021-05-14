@@ -92,6 +92,7 @@ function showTheBookData(e) {
     dataType : 'json',
     success: function (data) {
       console.log("success");
+      document.location("thankyou.html");
     },
     error: function (xhr) {
       console.error("Error in post", xhr);

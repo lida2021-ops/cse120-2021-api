@@ -133,7 +133,7 @@ function FormData(e) {
     });
   }
 
-function showTheData(e){
+function showTheHobbyData(e){
   e.preventDefault();
   if(validateFormData() == false) {
     return;
