@@ -1,4 +1,6 @@
-
+var requiredFields = [
+ "fullname", "title", "author", "genre", 
+] 
 var myBook = {
   "owner" : "Lida Asilyan",
   "project" : "Book",
@@ -78,6 +80,20 @@ function handleCustomLangChange() {
   if (myBook.language == "other") {
     myBook.customlanguage = document.getElementById("otherlang").value;
   }
+}
+
+function validateFormData() {
+  var isFormValid = true;
+  var keys = Object.keys(myBook);
+  keys.forEach(key => {
+      if (requiredFields.indexOf(key) > -1 && myBook[key] == "") { console.log(key, " is a required field, please add a value") 
+      if(document.getElementById(key)) {
+        document.getElementById(key).style.backgroundColor = "red"; 
+        isFormValid = false;
+      }
+    }   
+  })
+  return isFormValid;
 }
 
 function showTheBookData(e) {

@@ -17,7 +17,7 @@
     
     <form>
       <div class="form-div">
-         <label for "fname"> <b> Full name: </b> <sup>*</sup> </label> <br>  
+         <label for ="fname"> <b> Full name: </b> <sup>*</sup> </label> <br>  
         <input type="text" name= "fullname" id= "fullname" required
         onblur="handleFullnameChange()">   
       </div>
@@ -41,7 +41,7 @@
         <select onchange ="handleCoverMaterialChange()" id="cover">
           <option value="paperback">Paperback </option>
           <option value="harcover"> Hardcover </option>
-          <option value-'other'> Other </option>   
+          <option value="other"> Other </option>   
         </select> 
 
       </div> 
@@ -83,10 +83,12 @@
         <label for ="date"> Publishing Date: </label><br> <input type="date" id="date" name="publishing" onblur="handleDateChange()"> <br><br>
       </div>
       <div class="form-div">
-        <label for ="Genre"> Genre: </label><br> <input type = "text" id ="genre" onblur="handleGenreChange()"><br><br>
+        <label for ="Genre"> Genre: </label><br> <input type = "text" id ="genre" required onblur="handleGenreChange()"><br><br>
       </div>
                  
-     <button id = "mainbutton" onclick="showTheBookData(event)"> SUBMIT </button>
+     <button id = "mainbutton" onclick="showTheBookData(event)" style ="font-size: 20px;
+    border: none; border-radius: 10px 10px; padding: 15px; color: #6600cc;
+    background-color: #ffb6c1;"> SUBMIT </button>
         
         </div> 
     </form>  
