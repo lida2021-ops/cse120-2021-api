@@ -315,6 +315,6 @@ function editData(id) {
             document.location  = "form2.html"; 
         }
     })
-}
 
+    
 }
