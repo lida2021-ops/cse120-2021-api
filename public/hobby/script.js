@@ -139,6 +139,7 @@ function showTheHobbyData(e){
     return;
   } else {
     console.log(myHobby);
+
     $.ajax({
       type: 'POST',
       url: "https://cse120-2021-api-lida.herokuapp.com/data",
@@ -147,7 +148,8 @@ function showTheHobbyData(e){
       dataType : 'json',
       success: function (data) {
         console.log("success");
-      },
+      document.location="https://cse120-2021-api-lida.herokuapp.com/books/thankyou.html"; 
+    },
       error: function (xhr) {
         console.error("Error in post", xhr);
       },

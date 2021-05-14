@@ -122,7 +122,7 @@ select {
       }
 
 
-#button {
+button #mainButton {
 
   font-size: 20px;  
   border: none;
