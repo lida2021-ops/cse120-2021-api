@@ -314,7 +314,6 @@ function editData(id) {
             localStorage.setItem('editItem', JSON.stringify(item));
             document.location  = "form2.html"; 
         }
-    })
+    });
 
-    
 }
