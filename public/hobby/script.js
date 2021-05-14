@@ -1,7 +1,6 @@
 var requiredFields = [
  "fullname", "email", "age", "frequency", "hour", 
 ] 
-
 var myHobby = {
   "project" : "Fitness",
   "owner" : "Lida Asilyan",
@@ -20,70 +19,51 @@ var myHobby = {
   "cheatmeal" : "",
   "playlist" : ""
 }
-
-
 function handleFullnameChange() {
   var fullnameBox = document.getElementById("fullname")
   myHobby.fullname = fullnameBox.value;
   fullnameBox.style.backgroundColor = "white";
 }
-
-
 function handleEmailChange() {
   var emailBox = document.getElementById("email")
   myHobby.email = emailBox.value;
   emailBox.style.backgroundColor = "white";
 }
-
 function handleAgeChange(){ 
   myHobby.age= document.getElementById("age").value
   document.getElementById("age").style.backgroundColor = "white";
-
 }
-
 function handleLocationChange() {
   myHobby.location = document.getElementById("location").value;
 }
-
 function handleFrequencyChange() {
   var frequencyBox = document.getElementById("frequency")
   myHobby.frequency = frequencyBox.value;
   frequencyBox.style.backgroundColor = "white";
 }
-
 function handleHourChange() {
   var hourBox = document.getElementById("hour")
   myHobby.hour = hourBox.value;
   hourBox.style.backgroundColor = "white";
 }
-
 function handleWaterChange() {
   myHobby.water = document.getElementById("water").value;
 }
-
 function handleBloggerChange() {
   myHobby.blogger = document.getElementById("blogger").value;
 }
-
 function handleDietChange() {
   myHobby.diet = document.getElementById("diet").value;
 }
-
-
 function handleCaloriesChange() {
  myHobby.calories = document.getElementById("calories").valye;
-
 }
-
 function handleCheatmealChange() {
   myHobby.cheatmeal = document.getElementById("cheatmeal").value;
 }
-
 function handlePlaylistChange() {
   myHobby.playlist = document.getElementById("playlist").value;
 }
-
-
 function handleTypeChange(e) {
   myHobby.type = e.target.id;
   if (myHobby.type != "other") {
@@ -91,20 +71,17 @@ function handleTypeChange(e) {
   } else {document.getElementById("othertype").style.display = "block";
   }
 }
-
 function handleCustomOtherTypeChange() {
   if (myHobby.type == "other") {
     myHobby.customOtherType = document.getElementById("othertype").value;
   }
 }
-
 function handleCheckboxChange(e) {
   var value = e.target.id;
   if (e.target.value == "on") {
     myHobby.fav = myHobby.fav + "," + value;
   }
 } 
-
 function validateFormData() {
   var isFormValid = true;
   var keys = Object.keys(myHobby);
@@ -119,7 +96,7 @@ function validateFormData() {
   return isFormValid;
 }
 
-function FormData(e) {
+function myHobbyData(e) {
   e.preventDefault();
   if(validateFormData() == false) {
     return;
@@ -128,7 +105,6 @@ function FormData(e) {
     if (okay) {
        window.location.href = "https://cse120-2021-api-lida.herokuapp.com/;"
     }
-
 
     });
   }
@@ -139,7 +115,6 @@ function showTheHobbyData(e){
     return;
   } else {
     console.log(myHobby);
-
     $.ajax({
       type: 'POST',
       url: "https://cse120-2021-api-lida.herokuapp.com/data",
@@ -148,7 +123,7 @@ function showTheHobbyData(e){
       dataType : 'json',
       success: function (data) {
         console.log("success");
-      document.location="https://cse120-2021-api-lida.herokuapp.com/books/thankyou.html"; 
+        document.location="https://cse120-2021-api-lida.herokuapp.com/books/thankyou.html"; 
     },
       error: function (xhr) {
         console.error("Error in post", xhr);
@@ -159,7 +134,6 @@ function showTheHobbyData(e){
     });
   }
 }
-
 function displayData(existingData) {
   document.getElementById("existingData").innerHTML = "<ul>";
   for (var i = 0; i < existingData.length; i++) {
@@ -170,18 +144,15 @@ function displayData(existingData) {
 }
     
 function deleteData(id) {
-
     var r = confirm("Are you sure you want to delete the item with the following ID? " + id);
     if (r == true) {
       
     } else {
       return;
     }
-
     var tmp = {
         "id": id
     }
-
     $.ajax({
         type: 'POST',
         url: "https://cse120-2021-api-lida.herokuapp.com/data/delete",
@@ -200,12 +171,10 @@ function deleteData(id) {
         }
     });
 }
-
 function saveData() {
-	var tmp = {
-		"test": "Data"
-	}
-
+  var tmp = {
+    "test": "Data"
+  }
     $.ajax({
       type: 'POST',
       url: "https://cse120-2021-api-lida.herokuapp.com/data",
@@ -223,16 +192,13 @@ function saveData() {
         }
     });
 }
-
-
-
 function loadExistingData() {
     $.ajax({
         type : "GET",
         url : "https://cse120-2021-api-lida.herokuapp.com/data",
         dataType : "json",
         success : function(data) {
-        	console.log("success", data);
+          console.log("success", data);
             displayData(data.data);
         },
         error : function(data) {
@@ -240,11 +206,9 @@ function loadExistingData() {
         }
     });
 }
-
 function displayData(data) {
     document.getElementById("dataContainer").innerHTML = "";
     data.forEach(elem => {
-
     var item = document.createElement("div");
         item.id = "div" + elem["_id"];
         item.className = "item";
@@ -256,7 +220,6 @@ function displayData(data) {
     Object.keys(elem).forEach(key => {
       if (key != "_id") {
       var span = document.createElement("span");
-
       var b = document.createElement("b");
           b.innerHTML = key + ": ";
           span.appendChild(b);
@@ -272,7 +235,6 @@ function displayData(data) {
           span.appendChild(span1)
                 }
           item.appendChild(span);
-
       var br = document.createElement("br");
           item.appendChild(br);
             }
@@ -286,11 +248,8 @@ function displayData(data) {
         item.appendChild(button);
         document.getElementById("dataContainer").appendChild(item);
     })
-
 }
-
 var loadedData = [];
-
 function loadEditItem() {
     localStorage = window.localStorage;
     editItem = JSON.parse(localStorage.getItem("editItem"));
@@ -301,8 +260,6 @@ function loadEditItem() {
     document.getElementById("frequency").value = editItem["frequency"];   
     document.getElementById("water").value = editItem["water"];
 }
-
-
 function editData(id) {
     var tmp = id.split("edit_");
     var item_id = tmp[1];
