@@ -139,7 +139,6 @@ function showTheData(e){
     return;
   } else {
     console.log(myHobby);
-    
     $.ajax({
       type: 'POST',
       url: "https://cse120-2021-api-lida.herokuapp.com/data",
@@ -157,7 +156,6 @@ function showTheData(e){
       }
     });
   }
-}
 
 
 function displayData(existingData) {
