@@ -96,18 +96,6 @@ function validateFormData() {
   return isFormValid;
 }
 
-function myHobbyData(e) {
-  e.preventDefault();
-  if(validateFormData() == false) {
-    return;
-  } else {console.log("The current value is", myHobby)
-    Swal.fire("Good Job!", "Keep Working Out!", "success",).then(okay => {
-    if (okay) {
-       window.location.href = "https://cse120-2021-api-lida.herokuapp.com/;"
-    }
-
-    });
-  }
 
 function showTheHobbyData(e){
   e.preventDefault();
