@@ -86,14 +86,13 @@ select {
       }
 
 
-button #mainButton {
-  font-size: 20px;
-  background-color:rgba(240, 250, 102, 0.589)k;
-  border: none;
-  border-radius: 10px 10px;
-  padding: 15px;
-  color:purple ;
-  transform: matrix3d(180deg)
+#mainButton {
+    font-size: 20px;
+    border: none; 
+    border-radius: 10px 10px; 
+    padding: 15px; 
+    color: #6600cc;
+    background-color: #ffb6c1;
 }
        
 h1 {
