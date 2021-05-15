@@ -2,7 +2,6 @@ body {
  background-color:bisque;
  background-image: url("https://i.guim.co.uk/img/media/d305370075686a053b46f5c0e6384e32b3c00f97/0_50_5231_3138/master/5231.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=878208abf6d919b7ca9948a523d9ff4e");
  text-align: center;
- text-shadow: 2px 2px bisque;
  font-size: 18px;
  padding: 30px;
  font-family: "Sofia", sans-serif;
@@ -17,7 +16,7 @@ color: rgb(136, 15, 136);
 
 div.form-div {
 
-  background-color: rgba(243, 135, 180, 0.438);
+  background-color: rgba(243, 135, 180, 0.623);
   border-radius: 20px;
   border: 3px solid rgba(155, 22, 148, 0.795);
   padding:30px;
@@ -42,7 +41,7 @@ input[type=text], [type=color], [type=text], input[type=date] {
   font-size: large; 
   border-width: 0px;
   border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
-  background: rgba(243, 135, 180, 0.438);
+  background: rgba(243, 135, 180, 0.623);
   margin-top: 40px; 
   font-family: "Sofia", sans-serif;
 
