@@ -43,16 +43,22 @@ div.form-div {
 
 
 input[type=number], [type=color], [type=text] {
-  width: 70vw;
   box-shadow: 2px 2px palevioletred;
-  background-color: rgba(240, 250, 102, 0.589);
+  background-color: #CCCCFF;
   margin-bottom: 20px;
   border-radius: 40px;
   padding: 24px;
   box-sizing: border-box;
   border: 2px solid purple;
-  border-bottom: 1px black;
+  border-bottom: 1px #CCCCFF;
   padding-bottom: 50px;
+  width: 40vw;
+  color: #FF6699;
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted #FF6699;
+  margin-top: 40px; 
+  font-family: "Sofia", sans-serif;
 }
 
 
