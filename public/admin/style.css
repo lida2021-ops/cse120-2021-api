@@ -1,62 +1,58 @@
 body {
 
-    background-image: url(https://scontent.fevn6-2.fna.fbcdn.net/v/t1.6435-9/180626883_2991198987823709_8487369000329006454_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=EOoBORDw5OkAX9QyjYw&_nc_ht=scontent.fevn6-2.fna&oh=ad8a0c4…&oe=60C5A4FD);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-atachment: fixed;
-    background-size: cover;
-    background-color: rgb(53, 159, 185);
-    padding: 30px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 800px;
+ background-image: url("https://scontent.fevn6-2.fna.fbcdn.net/v/t1.6435-9/180626883_2991198987823709_8487369000329006454_n.jpg?_nc_cat=109&ccb=1-3&_nc_sid=e3f864&_nc_ohc=EOoBORDw5OkAX9QyjYw&_nc_ht=scontent.fevn6-2.fna&oh=ad8a0c4f3cb6c0ac43dfbd8c0818b815&oe=60C5A4FD");
+ background-position: center; 
+ background-repeat: no-repeat;
+ background-atachment: fixed;
+ background-size: cover;
+ background-color: rgb(53, 159, 185);
+ padding: 30px;
+ margin-left: auto;
+ margin-right: auto;
+ width: 800px;
+ 
 }
 
-
-
 div.item {
-	
+  
   background-color: darkseagreen;
-	width: 100%;
-	height: 30px;
-	float: left;
-	margin: 10px;
-	padding: 10px;
-	position: relative;
+  width: 100%;
+  height: 30px;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
   overflow-y: hidden;  
   cursor: pointer;
 }
 
 #fitnessDataContainer div.item {
   background-color: #67c1f5af;
-	width: 100%;
-	height: 30px;
-	float: left;
-	margin: 10px;
+  width: 100%;
+  height: 30px;
+  float: left;
+  margin: 10px;
   border-color: blue; 
-	padding: 10px;
-	position: relative;
+  padding: 10px;
+  position: relative;
   overflow-y: hidden;  
   cursor: pointer;
 }
-
 #bookDataContainer div.item {
-	background-color: rgba(206, 247, 131, 0.815);
-	width: 100%;
-	height: 30px;
-	float: left;
-	margin: 10px;
-	padding: 10px;
-	position: relative;
+  background-color: rgba(206, 247, 131, 0.815);
+  width: 100%;
+  height: 30px;
+  float: left;
+  margin: 10px;
+  padding: 10px;
+  position: relative;
   overflow-y: hidden;  
   cursor: pointer;
 }
-
 #otherDataContainer {
   display: none;
   
 }
-
 div.item button {
   font-size: 10px;  
   font-family: "Sofia", sans-serif;
@@ -71,41 +67,31 @@ div.item button {
   border: 1px solid rgb(116, 30, 156);
 }
 
-
 div.item button:hover {
   border: 1px solid rgb(73, 37, 90);
   background-color: rgba(185, 167, 196, 0.658);  
 }
-
 div.item button.editButton {
-	right: 70px;
+  right: 70px;
 }
-
 span.item {
-	line-height: 16px;
-	font-size: 14px;
+  line-height: 16px;
+  font-size: 14px;
 }
-
 span.item b {
-	margin-right: 10px;
+  margin-right: 10px;
 }
-
 span.undefined {
-	color: red;
+  color: red;
 }
-
 h1 {
-
  background-color: rgba(55, 221, 221, 0.432) ; 
  text-align: center; 
  color: azure; 
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
  font-size: 50pt; 
-
     }
-
 h2 {
-
   text-align: center; 
   font-family: Copperplate;
   font-size: 20pt; 
@@ -114,8 +100,5 @@ h2 {
   text-shadow: darkcyan;
   font-weight: bold;
   display: inline-block; 
-
  
 }
-
-
