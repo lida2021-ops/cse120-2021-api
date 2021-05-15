@@ -9,7 +9,7 @@ body {
 }
 
 label { font-size: x-large;
-color: rgba(138, 40, 138, 0.616);
+color: rgb(255 247 255 / 62%);
 
 }
 
@@ -27,7 +27,6 @@ div.form-div {
     margin-left: 90px;
     text-align: inherit;
     margin-right: 90px;
-    text-shadow: 2px 2px rgb(226 142 177);
     font-size: large;
   
 
