@@ -9,35 +9,36 @@ body {
 }
 
 label { font-size: x-large;
-color: rgb(136, 15, 136);
+color: rgba(138, 40, 138, 0.616);
 
 }
 
 
 div.form-div {
 
-  background-color: rgba(243, 135, 180, 0.623);
-  border-radius: 20px;
-  border: 3px solid rgba(155, 22, 148, 0.795);
-  padding:30px;
-  font-family: "Sofia", sans-serif;
-  margin-bottom: 20px;
-  margin-top: 20px;
-  margin-left: 20px;
-  text-align: inherit;
-  color: rgba(155, 22, 148, 0.795);
-  text-shadow: 2px 2px rgba(240, 123, 172, 0.589);
-  font-size: large; 
+    background-color: rgba(138, 40, 138, 0.616);
+    border-radius: 20px;
+    border: 3px solid rgb(230 192 208);
+    padding: 20px;
+    font-family: "Sofia", sans-serif;
+    color: rgb(226 142 177);
+    margin-bottom: 20px;
+    margin-top: 50px;
+    margin-left: 90px;
+    text-align: inherit;
+    margin-right: 90px;
+    text-shadow: 2px 2px rgb(226 142 177);
+    font-size: large;
   
 
 } 
 
 
-input[type=text], [type=color], [type=text], input[type=date] {
+input[type=text], [type=color], [type=text], [type=date] [type=number] {
 
 
   width: 40vw;
-  color: rgba(155, 22, 148, 0.795);
+  color: rgba(138, 40, 138, 0.616);
   font-size: large; 
   border-width: 0px;
   border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
@@ -60,6 +61,10 @@ input[type=text], [type=color], [type=text], input[type=date] {
 #books { 
     width: 70px;
 
+}
+
+sup {
+  color: 3px solid rgb(230 192 208)
 }
 
 
@@ -99,3 +104,10 @@ h1 {
  background-color: purple; text-align: center; color: azure; font-family: "Sofia", sans-serif;  transform: rotate3d(180deg);
 
     }
+
+  h2 {
+
+  color: rgb(236 204 217)
+  font-family: fantasy;
+ 
+}
