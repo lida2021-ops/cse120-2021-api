@@ -14,18 +14,40 @@ color: rgb(136, 15, 136);
 
 }
 
+
 div.form-div {
-  border:2px solid purple; 
-  background-color: #f5bcc2;
-  filter: alpha(opacity=60);
-  border-radius: 30px;
+
+  background-color: rgba(243, 135, 180, 0.438);
+  border-radius: 20px;
+  border: 3px solid rgba(155, 22, 148, 0.795);
   padding:30px;
-  margin-bottom: 30px;
+  font-family: "Sofia", sans-serif;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 20px;
+  text-align: inherit;
+  color: rgba(155, 22, 148, 0.795);
+  text-shadow: 2px 2px rgba(240, 123, 172, 0.589);
+  font-size: large; 
+  
+
+} 
+
+
+input[type=text], [type=color], [type=text], input[type=date] {
+
+
+  width: 40vw;
+  color: rgba(155, 22, 148, 0.795);
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
+  background: rgba(243, 135, 180, 0.438);
+  margin-top: 40px; 
   font-family: "Sofia", sans-serif;
 
 
-
-} 
+      }
 
 #funny_girl {
   height:100px;
@@ -43,27 +65,7 @@ div.form-div {
 
 
 
-input[type=number], [type=color], [type=text] {
-  box-shadow: 2px 2px palevioletred; 
-  background-color: fade(#f5bcc2, 70%);
-  margin-bottom: 20px;
-  border-radius: 40px;
-  padding: 24px;
-  box-sizing: border-box;
-  border: 2px solid purple;
-  border-bottom: 1px #CCCCFF;
-  padding-bottom: 50px;
-  width: 40vw;
-  color: #FF6699;
-  font-size: large; 
-  border-width: 0px;
-  border-bottom: 1px dotted #FF6699;
-  margin-top: 40px; 
-  font-family: "Sofia", sans-serif;
-}
-
-
-input[type=button], input[type=date] {
+input[type=button] {
   width: 70vw;
   box-shadow: 2px 2px palevioletred;
   background-color: rgba(240, 250, 102, 0.589);
@@ -80,17 +82,15 @@ input[type=button], input[type=date] {
   
 
 select {
-  width: 70vw;
-  box-shadow: 2px 2px palevioletred;
-  background-color: rgba(240, 250, 102, 0.589);
-  margin-bottom: 20px;
-  border-radius: 50px;
-  padding: 24px;
-  box-sizing: border-box;
-  border: 2px solid purple;
-  border-bottom: 1px black;
-  padding-bottom: 50px;
+  width: 40vw;
+  color: rgba(155, 22, 148, 0.795);
+  font-size: large; 
+  border-width: 0px;
+  border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
+  background: rgba(243, 135, 180, 0.438);
+  margin-top: 40px; 
   font-family: "Sofia", sans-serif;
+
       }
 
 
