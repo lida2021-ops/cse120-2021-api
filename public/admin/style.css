@@ -25,7 +25,7 @@ div.item {
 }
 
 #fitnessDataContainer div.item {
-  background-color: #c0bcd8dc;
+  background-color: #67c1f5af;
 	width: 100%;
 	height: 30px;
 	float: left;
@@ -38,7 +38,7 @@ div.item {
 }
 
 #bookDataContainer div.item {
-	background-color: #4499e7ec;
+	background-color: rgba(206, 247, 131, 0.815);
 	width: 100%;
 	height: 30px;
 	float: left;
@@ -59,14 +59,15 @@ div.item button {
   font-family: "Sofia", sans-serif;
   border-radius: 10px 10px;
   padding: 10px;
-  color: darkblue;
-  background-color: rgba(217, 195, 230, 0.658);  
-	position: absolute;
-	bottom: 10px;
-	right: 10px;
+  color: rgb(139, 0, 0);
+  background-color: rgba(243, 128, 153, 0.76);  
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   cursor: pointer;
-  border: 1px solid rgb(178, 123, 204);
+  border: 1px solid rgb(116, 30, 156);
 }
+
 
 div.item button:hover {
   border: 1px solid rgb(73, 37, 90);
@@ -92,7 +93,7 @@ span.undefined {
 
 h1 {
 
- background-color: darkcyan ; 
+ background-color: rgba(55, 221, 221, 0.432) ; 
  text-align: center; 
  color: azure; 
  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
