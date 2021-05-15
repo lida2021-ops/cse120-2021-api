@@ -38,11 +38,11 @@ input[type=text], input[type=color], input[type=text], input[type=date], input[t
 
 
   width: 40vw;
-  color: rgba(138, 40, 138, 0.616);
+  color: 3px solid rgb(230 192 208);
   font-size: large; 
   border-width: 0px;
   border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
-  background: rgba(243, 135, 180, 0.623);
+  background: rgba(138, 40, 138, 0.616);
   margin-top: 40px; 
   font-family: "Sofia", sans-serif;
 
@@ -87,11 +87,11 @@ input[type=button] {
 
 select {
   width: 40vw;
-  color: rgba(155, 22, 148, 0.795);
+  color: 3px solid rgb(230 192 208);
   font-size: large; 
   border-width: 0px;
   border-bottom: 1px dotted rgba(155, 22, 148, 0.795);
-  background: rgba(243, 135, 180, 0.438);
+  background: rgba(138, 40, 138, 0.616);
   margin-top: 40px; 
   font-family: "Sofia", sans-serif;
 
@@ -108,6 +108,5 @@ h1 {
   h2 {
 
   color: rgb(236 204 217)
-  font-family: fantasy;
  
 }
