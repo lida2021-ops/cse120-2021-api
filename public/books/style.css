@@ -44,9 +44,8 @@ div.form-div {
 
 
 input[type=number], [type=color], [type=text] {
-  box-shadow: 2px 2px palevioletred;
-  background-color: #f5bcc2;
-  filter: alpha(opacity=60);  
+  box-shadow: 2px 2px palevioletred; 
+  background-color: fade(#f5bcc2, 70%);
   margin-bottom: 20px;
   border-radius: 40px;
   padding: 24px;
